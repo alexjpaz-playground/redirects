@@ -21,9 +21,9 @@
               : document.location.href;
 
       console.log(url)
-      location.assign("https://alexjpaz.com/404?r="+encodeURIComponent(url));
+      window.top.location.href = "https://alexjpaz.com/404?r="+encodeURIComponent(url);
     } catch(e) {
-      location.assign("https://alexjpaz.com/404?error=true");
+      window.top.location.href = "https://alexjpaz.com/404?error=true";
     }
   </script>
 </body>
