@@ -19,9 +19,9 @@
       var url = (window.location != window.parent.location)
               ? document.referrer
               : document.location.href;
-      window.top.location.assign("https://alexjpaz.com/404?r="+encodeURIComponent(url));
+      location.assign("https://alexjpaz-playground.github.io/redirects/404?r="+encodeURIComponent(url));
     } catch(e) {
-      window.top.location.assign("https://alexjpaz.com/404?error=true");
+      location.assign("https://alexjpaz-playground.github.io/redirects/404?error=true");
     }
   </script>
 </body>
